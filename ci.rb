@@ -1,6 +1,10 @@
 #!/usr/bin/ruby
 # frozen_string_literal: true
 
+# Gross, but we need to make sure the SSG is updated before
+# we build the source.
+`gem update sawsge`
+
 require 'English'
 require 'fileutils'
 require 'sawsge'
